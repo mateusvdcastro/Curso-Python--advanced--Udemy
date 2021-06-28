@@ -1,0 +1,3 @@
+[11744:4916:0402/210336.038:INFO:CONSOLE(0)] "::-webkit-details-marker pseudo element selector is deprecated. Please use ::marker instead. See https://chromestatus.com/feature/6730096436051968 for more details.", source: https://github.com/ (0)
+[11744:4916:0402/210342.580:ERROR:device_event_log_impl.cc(214)] [21:03:42.580] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+[11744:4916:0402/210346.561:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
