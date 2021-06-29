@@ -13,8 +13,9 @@ import os
 
 # JUNTAS PDFs
 caminho_dos_pdfs = 'pdf'
+# r'c:tananan/tananan'
 
-novo_pdf = PyPDF2.PdfFileMerger()
+'''novo_pdf = PyPDF2.PdfFileMerger()
 for root, dirs, files in os.walk(caminho_dos_pdfs):
     for file in files:
         caminho_completo_arquivo = os.path.join(root, file)
@@ -23,7 +24,7 @@ for root, dirs, files in os.walk(caminho_dos_pdfs):
         novo_pdf.append(arquivo_pdf)
 
 with open(f'{caminho_dos_pdfs}/novo_arquivo.pdf', 'wb') as meu_novo_pdf:
-    novo_pdf.write(meu_novo_pdf)
+    novo_pdf.write(meu_novo_pdf)'''
 
 
 
@@ -37,5 +38,5 @@ with open('pdf/novo_arquivo.pdf', 'rb') as arquivo_pdf:
         pagina_atual = leitor.getPage(num_pagina)
         escritor.addPage(pagina_atual)
 
-        with open(f'novos_pdfs/{num_pagina}.pdf', 'wb') as novo_pdf:
+        with open(f'pdf/novos_pdfs/{num_pagina}.pdf', 'wb') as novo_pdf:
             escritor.write(novo_pdf)
