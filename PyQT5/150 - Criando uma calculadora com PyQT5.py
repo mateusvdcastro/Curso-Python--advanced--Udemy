@@ -7,13 +7,13 @@ class Calculadora(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle('Calculadora com PyQT5')
-        self.setFixedSize(400, 400)
+        self.setFixedSize(400, 400)  # setar uma tamanho fixo para a calculadora
         self.cw = QWidget()
         self.grid = QGridLayout(self.cw)
 
         self.display = QLineEdit()
-        self.grid.addWidget(self.display, 0, 0, 1, 5)
-        self.display.setDisabled(True)
+        self.grid.addWidget(self.display, 0, 0, 1, 5)  # Linha, coluna, ocupar quantas linhas, ocupar tantas colunas
+        self.display.setDisabled(True)  # impede que o usuário digite no display
         self.display.setStyleSheet(
             '* {background: white; color: #000; font-size: 30px;}'
         )
