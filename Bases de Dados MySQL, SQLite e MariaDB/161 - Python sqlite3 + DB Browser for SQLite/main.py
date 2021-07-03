@@ -41,4 +41,5 @@ class AgendaDB:
 
 if __name__ == '__main__':
     agenda = AgendaDB('agenda.db')
-    agenda.buscar('luiz')
+    agenda.inserir('Mateus', '11941498570')
+    agenda.listar()
