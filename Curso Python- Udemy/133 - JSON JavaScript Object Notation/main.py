@@ -30,7 +30,7 @@ null	        None
 from dados import *
 import json
 
-lista = [1,2,3,4,5,6]
+lista = [1, 2, 3, 4, 5, 6]
 dados_teste_jason = json.dumps(lista)
 print(dados_teste_jason)
 print(type(dados_teste_jason))  # como podemos ver isso converteu uma lista para uma str

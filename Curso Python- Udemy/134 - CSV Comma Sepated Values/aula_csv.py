@@ -12,6 +12,9 @@ with open('clientes.csv', 'r') as arquivo:
     """
     # next(dados)
     dados = [x for x in csv.DictReader(arquivo)]
+    for dado in dados:
+        for k, v in dado.items():
+            print(v)
 
 with open('cliente2.csv', 'w') as arquivo:
     escreve = csv.writer(
