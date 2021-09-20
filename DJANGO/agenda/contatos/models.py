@@ -21,6 +21,9 @@ nome: STR * (obrigatório)
 class Categoria(models.Model):
     nome = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.nome
+
 
 class Contato(models.Model):
     nome = models.CharField(max_length=255)  # with 255 we're limiting the max lenght of the words in this field
@@ -30,6 +33,9 @@ class Contato(models.Model):
     data_criacao = models.DateTimeField(default=timezone.now)
     descricao = models.TextField(blank=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        return self.nome
 
 # when you did some changed:
 # python manage.py makemigrations
