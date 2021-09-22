@@ -37,11 +37,13 @@
     {% for pagina in contatos.paginator.page_range %}
       {% if contatos.number == pagina %}
         <li class="page-item active">
-          <a class="page-link" href="?p={{ pagina }}&termo={{ request.GET.termo }}">{{ pagina }}</a>
+          <a class="page-link"
+             href="?p={{ pagina }}{% if request.GET.termo is not None %}&termo={{ request.GET.termo }}{% endif %}">{{ pagina }}</a>
         </li>
       {% else %}
         <li class="page-item">
-          <a class="page-link" href="?p={{ pagina }}&termo={{ request.GET.termo }}">{{ pagina }}</a>
+          <a class="page-link"
+             href="?p={{ pagina }}{% if request.GET.termo is not None %}&termo={{ request.GET.termo }}{% endif %}">{{ pagina }}</a>
         </li>
       {% endif %}
     {% endfor %}
@@ -49,3 +51,5 @@
   </ul>
 </nav>
 {%endblock%}
+
+# "?p={{ pagina }}{% if request.GET.termo is not None %}&termo={{ request.GET.termo }}{% endif %}"
