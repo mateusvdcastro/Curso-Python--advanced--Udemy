@@ -26,10 +26,12 @@
                      id="search-input"
                      placeholder="Digite sua pesquisa"
                      name="termo">
+
+              {% include 'partial/_messages.html' %}
             </div>
           </div>
         </form>
-        {%block conteudo%} {%endblock%}
+        {%block conteudo%}{%endblock%}
       </div>
     </div>
   </div>
