@@ -1,0 +1,18 @@
+
+Abra o terminal do Linux e do Windows
+
+No Linux:
+                        # certifique-se que a rede do Virtual Box está em modo Placa em modo bridge
+$ ip address show        -> Para verificar o IP
+$ sudo apt install ssh
+$ sudo nano /etc/ssh/sshd_config
+$ nano ~/.ssh/authorized_key
+
+
+No windows:
+$ ping 192.168.0.11      -> Para verificar o IP gerado no Linux (Placa em modo bridge)
+ssh-keygen -t rsa -b 4096 -C "mateusvc1124@gmail.com"             -> C:\Users\Asus/.ssh/id_rsa.pub.
+
+# Chaves SSH no Linux
+ssh-keygen -f ~/.ssh/nome_da_chave -t rsa -b 4096
+cat ~/.ssh/nome_da_chave.pub
