@@ -1,18 +1,16 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt">
 
 <head>
-
-  <title>Agenda</title>
+  <title>{%block titulo%}{%endblock%}Agenda</title>
   {% include 'partial/_head.html' %}
 
 </head>
 
 <body>
 
-  {%include 'partial/_nav.html' %}
-
+  {% include 'partial/_nav.html' %}
   <!-- Page Content -->
   <div class="container">
     <div class="row">
@@ -34,7 +32,8 @@
         </form>
         {% endif %}
 
-        {%block conteudo%}{%endblock%}
+
+        {%block conteudo%} {%endblock%}
       </div>
     </div>
   </div>
