@@ -124,6 +124,9 @@ STATIC_URL = '/static/'
 STATCFILES_DIRS = [
     os.path.join(BASE_DIR, 'templates/static')
 ]
+STATIC_ROOT = os.path.join('static')
+# python manage.py collectstatic
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'media/'
 
