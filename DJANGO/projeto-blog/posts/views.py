@@ -1,15 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.edit import UpdateView
-from posts.models import Post
+from .models import Post
 from django.db.models import Q, Count, Case, When
 from comentarios.forms import FormComentario
+from comentarios.models import Comentario
+from django.contrib import messages
+from django.views import View
 
 
 class PostIndex(ListView):
     model = Post
     template_name = 'posts/index.html'
-    paginate_by = 2
+    paginate_by = 6
     context_object_name = 'posts'
 
     def get_queryset(self):
@@ -27,7 +31,7 @@ class PostIndex(ListView):
         return qs
 
 
-class PostBusca(ListView):
+class PostBusca(PostIndex):
     template_name = 'posts/post_busca.html'
 
     def get_queryset(self):
@@ -64,7 +68,7 @@ class PostCategoria(PostIndex):
         return qs
 
 
-class PostDetalhes(UpdateView):
+class PostDetalhes(View):
     template_name = 'posts/post_detalhes.html'
 
     def setup(self, request, *args, **kwargs):
