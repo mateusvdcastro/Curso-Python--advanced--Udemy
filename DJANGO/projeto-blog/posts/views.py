@@ -101,3 +101,5 @@ class PostDetalhes(View):
         comentario.save()
         messages.success(request, 'Seu comentário foi enviado para revisão.')
         return redirect('post_detalhes', pk=self.kwargs.get('pk'))
+
+# https://docs.djangoproject.com/en/3.2/ref/class-based-views/
