@@ -1,0 +1,5 @@
+docker-compose up
+docker-compose up -d
+docker ps
+docker stop b12c
+docker start b12c
