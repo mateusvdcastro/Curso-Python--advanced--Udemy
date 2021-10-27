@@ -1,5 +1,17 @@
-docker-compose up
-docker-compose up -d
-docker ps
-docker stop b12c
-docker start b12c
+#execute no powershell dentro do vscode no .yml
+
+
+docker-compose up     (usado para subir a base de dados)
+docker-compose up -d  (usado para subir a base de dados mas sem poluir o terminal)
+docker ps             (Ver os conteiners que estão rodando)  
+docker stop b12c      (para conteiner)
+docker start b12c     (iniciar conteiner)
+
+
+
+wsl --shutdown            (para desligar a maquina virtual ubuntu)
+
+
+Download docker - https://docs.docker.com/get-docker/
+Docker hub - https://hub.docker.com/_/mysql
+DBeaver dowload - https://dbeaver.io/download/
