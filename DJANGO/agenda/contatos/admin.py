@@ -16,4 +16,6 @@ admin.site.register(Categoria)
 admin.site.register(Contato, ContatoAdmin)
 
 # python manage.py createsuperuser
+# username: mateuscastro
+# senha: a de sempre
 
