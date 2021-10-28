@@ -8,5 +8,3 @@ html = BeautifulSoup(response.text, 'html.parser')
 for post in html.select('.eo2As '):
     titulo = post.select_one('.Jv7Aj  MqpiF  ')
     print(titulo.text)
-
-print("Teste commit")
