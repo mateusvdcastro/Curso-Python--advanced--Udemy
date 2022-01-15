@@ -13,7 +13,7 @@ services:
     volumes: 
       - C:\Users\Asus\Documents\PycharmProjects\Curso-Python-Udemy\Bases de Dados MySQL, SQLite e MariaDB\DockerHub\Backup Mysql:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: senha
       MYSQL_DATABASE: base_de_dados

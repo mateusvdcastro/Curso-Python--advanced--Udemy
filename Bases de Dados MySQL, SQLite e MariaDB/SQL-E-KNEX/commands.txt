@@ -4,8 +4,8 @@
 docker-compose up     (usado para subir a base de dados)
 docker-compose up -d  (usado para subir a base de dados mas sem poluir o terminal)
 docker ps             (Ver os conteiners que estão rodando)  
-docker stop b12c      (para conteiner)
-docker start b12c     (iniciar conteiner)
+docker stop cd7c      (parar conteiner)
+docker start cd7c     (iniciar conteiner)
 
 
 
