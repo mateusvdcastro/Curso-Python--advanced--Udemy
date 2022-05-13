@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Comentario
 
 
-class ComentariosAdmin(admin.ModelAdmin):
+class ComentarioAdmin(admin.ModelAdmin):
     list_display = ('id', 'nome_comentario', 'email_comentario',
                     'post_comentario', 'data_comentario',
                     'publicado_comentario')
@@ -10,7 +10,8 @@ class ComentariosAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'nome_comentario', 'email_comentario',)
 
 
-admin.site.register(Comentario, ComentariosAdmin)
+admin.site.register(Comentario, ComentarioAdmin)
+
 
 # python manage.py makemigrations
 # python manage.py migrate
