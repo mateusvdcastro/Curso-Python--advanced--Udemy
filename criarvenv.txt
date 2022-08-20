@@ -11,8 +11,9 @@ python3 -m install numpy matplotlib
 
 ================ Windows ===================================================================
 python -m venv nome_ambiente
-nome_venv\scripts\activate.bat ==> caso esteja no CMD
-nome_venv\scripts\activate.ps1 ==> caso esteja no PowerShell
+!! Atenção no contra barra
+.\nome_venv\scripts\activate.bat ==> caso esteja no CMD
+.\nome_venv\scripts\activate.ps1 ==> caso esteja no PowerShell
 deactivate
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process ==> libera o powershell para que ele permita a criação de ambientes
 
